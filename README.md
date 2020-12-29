@@ -1,4 +1,4 @@
-# personal-website
+# Personal website
 This personal website demonstrates some of my projects, interest, and hobbies.
 
 # Run local website
