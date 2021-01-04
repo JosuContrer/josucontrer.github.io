@@ -16,13 +16,15 @@
 
         color: white;
         text-shadow: 0 0 40px black;
+        text-align: center;
 
         h{
-            font-size: 60px;
+            font-size: 50px;
             font-weight: bold;
         }
 
         p{
+            position: relative;
             font-size: 40px;
         }
 
