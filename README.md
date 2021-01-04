@@ -5,4 +5,4 @@ This personal website demonstrates some of my projects, interest, and hobbies.
 > npm start
 
 # Deploy website to github pages
-> npm rundeploy
+> npm run deploy

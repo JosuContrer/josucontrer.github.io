@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import { TitleCard } from './components/TitleCard';
 
 import './App.scss';
+import UnderDevelopment from './components/UnderDevelopment';
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
       <Router>
         <Navbar toggle={toggle}/>
         <DropDown toggle={toggle} isOpen={isOpen}/>
-        <TitleCard/>
-        <AboutCard/>
+        <UnderDevelopment/>
+        {/* <TitleCard/>
+        <AboutCard/> */}
       </Router>
     </>
   );
