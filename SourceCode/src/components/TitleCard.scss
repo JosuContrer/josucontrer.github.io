@@ -1,0 +1,32 @@
+@import "../SiteColorPalette.scss";
+
+.TitleCardContainer{
+    height: 100vh;
+    max-height: 1100px;
+    position: relative;
+    overflow: hidden;
+
+    .TitleCardWrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: absolute;
+        // background-image: radial-gradient($_dark_slate 50%, black);
+        object-fit: cover;
+    }
+
+    .TitleCardBackgroundImage{
+        position: absolute;
+        z-index: -50;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        // transform: translate(-10%);
+        object-fit: cover;
+    }
+}

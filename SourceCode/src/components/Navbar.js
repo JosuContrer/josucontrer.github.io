@@ -3,15 +3,15 @@ import './Navbar.scss';
 import {Link} from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
 import { menuData } from '../data/MenuData.js';
  
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
      return (
          <div className='NavMenu'>
              <a className='NavMenuIcon' href='/'>
-                <FontAwesomeIcon icon={faCoffee}/> Josue Contreras
+                <FontAwesomeIcon icon={faCoffee}/> Josue
              </a>
              <div className='NavMenuTitles'>
                  {menuData.map((item, index)=>
@@ -20,7 +20,10 @@ const Navbar = () => {
                     </Link>
                  )}
              </div>
-             <button href="/contact">Contact</button>
+             <button href="/contact" title="You wont't regret it!">Contact</button>
+             <div className="NavMenuMobile" onClick={toggle}>
+                 <FontAwesomeIcon icon={faBars}/>
+             </div>
          </div>
      )
  }
