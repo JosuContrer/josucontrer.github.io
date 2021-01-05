@@ -1,32 +1,39 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
+import { contactData } from '../data/ContactData';
 
 import './DropDown.scss';
 
 export default function DropDown({toggle, isOpen}) {
 
-    // top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
-    const DropDownContainer = styled.div`
-        top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
-        opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
-    `;
-
     return (
-        <DropDownContainer className="DropDownMenuContainer" isOpen={isOpen} onClick={toggle}>
-            <FontAwesomeIcon className="ExitIcon" icon={ faTimesCircle} onClick={toggle}></FontAwesomeIcon>
+        <div className={isOpen ? "DropDownMenuContainerOpen" : "DropDownMenuContainerClosed"} isOpen={isOpen} onClick={toggle}>
+            <div className="ExitIconContainer">
+                <FontAwesomeIcon className="ExitIcon" icon={ faTimesCircle} onClick={toggle}></FontAwesomeIcon>
+            </div>
             <div className="DropDownMenuTitles">
                 {menuData.map((item, index) =>
-                    <Link className="DropDownMenuLinks" to={item.link} key={index}>
-                        {item.title}
-                    </Link>
+                    <div className="DropDownMenuRowContainer">{item.icon}
+                        <Link className="DropDownMenuLinks" to={item.link} key={index}>
+                            {item.title}
+                        </Link>
+                    </div>
                 )}
-                <button href="/contact" title="You wont't regret it!">Contact</button>
+                <button href="/contact" title="You wont't regret it!">
+                    <FontAwesomeIcon icon={faAddressCard}/> Contact
+                </button>
             </div>
-        </DropDownContainer>
+            <div className="ContactContainer">
+                {contactData.map((item, index) => 
+                    <a href={item.link} className="ContactIcon">
+                        {item.icon}
+                    </a>
+                )}
+            </div>
+        </div>
     )
 }

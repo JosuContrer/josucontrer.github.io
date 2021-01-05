@@ -67,6 +67,12 @@ div{
                 display: block;
                 align-items: center;
                 cursor: pointer;
+                transition: 500ms;
+
+                &:hover{
+                    transform: rotateZ(-90deg);
+                    transition: 500ms;
+                }
             }
         }
     }

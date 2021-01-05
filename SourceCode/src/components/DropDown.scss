@@ -1,58 +1,79 @@
 @import '../SiteColorPalette.scss';
 
-.DropDownMenuContainer{
-    position: fixed;
+.DropDownMenuContainerOpen{
+    overflow: hidden;
+    position: absolute;
     z-index: 999;
-    left: 0;
-    width: 100%;
+    right: 0;
+    top: 0;
+    width: 350px;
     height: 100%;
     background: $_dark_slate;
     align-items: center;
-    display: grid;
-    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: 800ms ease-in-out;
     
-    .ExitIcon{
-        color: $_red;
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        font-size: 40px;
-        cursor: pointer;
+    .ExitIconContainer{
+        width: 100%;
+        text-align: right;
+        background-color: $_dark_slate_lighter;
 
-        &:hover{
-            color: $_red_darker;
+        .ExitIcon{
+            color: $_red;
+            margin-top: 1.2rem;
+            margin-right: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 40px;
+            cursor: pointer;
+
+            &:hover{
+                color: $_red_darker;
+            }
         }
     }
 
     .DropDownMenuTitles{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 80px);
-        text-align: center;
-        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 2rem;
 
-        .DropDownMenuLinks{
+        .DropDownMenuRowContainer{
             display: flex;
-            justify-content: space-evenly;
-            margin: 10px;
-            cursor: pointer;
-            text-decoration: none;
+            flex-direction: row;
             color: white;
-            font-size: 1.5rem;
+            align-items: center;
+            font-size: 30px;
+            padding: 1rem;
+            border-radius: 6px;
 
-            &:hover {
-                color: black
+            .DropDownMenuLinks{
+                display: flex;
+                margin: 10px;
+                align-items: center;
+                cursor: pointer;
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                height: 100%;
+                font-size: 1.5rem;
+            }   
+
+            &:hover{
+                background-color: $_dark_slate_darker;
             }
-        }   
+        }
 
         button{
-            justify-self: center;
             width: fit-content;
             font-size: $_large;
             font-weight: bold;
             color: white;
             background-color: $_red;
             padding: 20px;
+            margin-top: 1rem;
             text-decoration: none;
             border: 1px;
             outline-style: none;
@@ -65,4 +86,27 @@
         }
     }
 
+    .ContactContainer{
+        display: flex;
+        justify-content: center;
+        color: $_white_darker;
+        margin: 2rem;
+        font-size: 40px;
+
+        .ContactIcon{
+            text-decoration: none;
+            text-decoration-color: $_white_darker;
+            color: $_white_darker; 
+            margin: 10px;
+        }
+    }
+
+}
+
+.DropDownMenuContainerClosed{
+
+    @extend .DropDownMenuContainerOpen;
+
+    position: absolute;
+    right: -100%;
 }
