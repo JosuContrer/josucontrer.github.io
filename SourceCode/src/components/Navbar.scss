@@ -28,7 +28,7 @@ div{
             align-items: center;
             justify-content: left;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $_min_sceen_width) {
                 display: none;
             }
     
@@ -55,7 +55,7 @@ div{
             border-radius: 10px;
             cursor: pointer;
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: $_min_sceen_width) {
                 display: none;
             }
         }
@@ -63,7 +63,7 @@ div{
         .NavMenuMobile{
             display: none;
 
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: $_min_sceen_width){
                 display: block;
                 align-items: center;
                 cursor: pointer;
