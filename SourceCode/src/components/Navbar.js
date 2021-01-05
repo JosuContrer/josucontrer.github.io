@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
@@ -15,7 +15,7 @@ const Navbar = ({toggle}) => {
              </a>
              <div className='NavMenuTitles'>
                  {menuData.map((item, index)=>
-                    <Link className='NavMenuLinks' to={item.link} key={index}>
+                    <Link className='NavMenuLinks' to={item.link} key={index} spy={true} smooth={true} offset={50} duration={500}>
                         {item.title}
                     </Link>
                  )}

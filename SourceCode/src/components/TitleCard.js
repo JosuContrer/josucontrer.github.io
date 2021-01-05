@@ -3,7 +3,7 @@ import React from 'react';
 import './TitleCard.scss';
 import BackgroundTitleImg from '../images/TitleCardBackground.jpg'
 
-export const TitleCard = () => {
+const TitleCard = () => {
     return (
         <div className="TitleCardContainer">
             <div className="TitleCardWrapper">
@@ -13,3 +13,5 @@ export const TitleCard = () => {
         </div>
     )
 }
+
+export default TitleCard

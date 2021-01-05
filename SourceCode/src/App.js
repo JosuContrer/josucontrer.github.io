@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 
+import { Switch, Route } from 'react-router-dom';
+import { Element } from 'react-scroll';
+
 import Navbar from './components/Navbar';
 import UnderDevelopment from './components/UnderDevelopment';
 import AboutCard from './components/AboutCard';
 import DropDown from './components/DropDown';
-
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import { TitleCard } from './components/TitleCard';
+import TitleCard from './components/TitleCard';
+import ErrorPage from './components/ErrorPage';
 
 import './App.scss';
 
@@ -20,15 +22,18 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Navbar toggle={toggle}/>
-        <DropDown toggle={toggle} isOpen={isOpen}/>
-        <Switch>
-          <Route path='/' component={UnderDevelopment}/>
-          {/* <Route path='/home' TitleCard/>
-          <AboutCard/> */}
-        </Switch>
-      </Router>
+      <Navbar toggle={toggle}/>
+      <DropDown toggle={toggle} isOpen={isOpen}/>
+      <Switch>
+        <Route exact path='/'>
+          <Element name='/home'> <TitleCard/> </Element>
+          <Element name='/about'> <AboutCard/> </Element>
+          {/*<Route path='/' UnderDevelopment/> */}
+        </Route>
+        <Route exact path='*'>
+          <ErrorPage/>
+        </Route>
+      </Switch>
     </>
   );
 }
