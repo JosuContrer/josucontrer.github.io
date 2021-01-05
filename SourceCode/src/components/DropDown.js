@@ -2,7 +2,7 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { menuData } from '../data/MenuData';
 import { contactData } from '../data/ContactData';
 
@@ -17,8 +17,9 @@ export default function DropDown({toggle, isOpen}) {
             </div>
             <div className="DropDownMenuTitles">
                 {menuData.map((item, index) =>
-                    <div className="DropDownMenuRowContainer">{item.icon}
-                        <Link className="DropDownMenuLinks" to={item.link} key={index}>
+                    <div className="DropDownMenuRowContainer">
+                        {item.icon}
+                        <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={50} duration={500}>
                             {item.title}
                         </Link>
                     </div>

@@ -5,7 +5,7 @@
     position: fixed;
     z-index: 999;
     right: 0;
-    top: 0;
+    // top: 0;
     width: 350px;
     height: 100vh;
     background: $_dark_slate;
@@ -107,6 +107,5 @@
 
     @extend .DropDownMenuContainerOpen;
 
-    position: absolute;
     right: -100%;
 }
