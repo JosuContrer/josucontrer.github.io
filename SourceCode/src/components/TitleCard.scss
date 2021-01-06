@@ -14,12 +14,13 @@
         align-items: center;
         overflow: hidden;
         position: absolute;
+        box-shadow: 0px 0px 100px -30px rgb(85, 84, 84) inset;
         // background-image: radial-gradient($_dark_slate 50%, black);
         object-fit: cover;
     }
 
     .TitleCardBackgroundImage{
-        position: absolute;
+        position: fixed;
         z-index: -50;
         top: 0;
         left: 0;

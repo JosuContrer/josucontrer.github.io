@@ -5,7 +5,7 @@
     min-height: 100vh;
     max-height:min-content;
     //padding: top right bottom left
-    padding: 5rem 3rem 5rem 2rem;
+    padding: $_card_margin;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,6 +22,12 @@
     }
 
     .ColRight{
+        display: flex;
+        flex-direction: column;
         width: 50%;
+
+        .AboutTextWrapper{
+            margin: 5px 0px 5px 0px;
+        }
     }
 }

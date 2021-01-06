@@ -1,0 +1,13 @@
+@import '../SiteColorPalette.scss';
+
+.ProjectsContainer{
+    min-height: 100vh;
+    height: fit-content;
+    background-color: $_dark_slate;
+    color: white;
+    padding: $_card_margin; 
+
+    .ProjectsTextWrapper{
+        margin: 5px 0px 5px 0px;
+    }
+}

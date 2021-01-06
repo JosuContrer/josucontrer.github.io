@@ -8,6 +8,7 @@ import UnderDevelopment from './components/UnderDevelopment';
 import AboutCard from './components/AboutCard';
 import DropDown from './components/DropDown';
 import TitleCard from './components/TitleCard';
+import ProjectsCard from './components/ProjectsCard';
 import ErrorPage from './components/ErrorPage';
 
 import './App.scss';
@@ -28,6 +29,7 @@ function App() {
         <Route exact path='/'>
           <Element name='/home'> <TitleCard/> </Element>
           <Element name='/about'> <AboutCard/> </Element>
+          <Element name='/projects'> <ProjectsCard/> </Element>
           {/*<Route path='/' UnderDevelopment/> */}
         </Route>
         <Route exact path='*'>
