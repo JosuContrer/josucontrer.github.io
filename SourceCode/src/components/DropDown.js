@@ -19,7 +19,7 @@ export default function DropDown({toggle, isOpen}) {
                 {menuData.map((item, index) =>
                     <div className="DropDownMenuRowContainer">
                         {item.icon}
-                        <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={50} duration={500}>
+                        <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={0} duration={500}>
                             {item.title}
                         </Link>
                     </div>

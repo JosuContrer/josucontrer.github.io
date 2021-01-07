@@ -1,0 +1,13 @@
+@import '../SiteColorPalette.scss';
+
+.ExperienceContainer{
+    min-height: 100vh;
+    height: fit-content;
+    background-color: $_silver_fox;
+    color: black;
+    padding: $_card_margin; 
+
+    .ExperienceTextWrapper{
+        margin: 5px 0px 5px 0px;
+    }
+}

@@ -12,6 +12,7 @@ import ProjectsCard from './components/ProjectsCard';
 import ErrorPage from './components/ErrorPage';
 
 import './App.scss';
+import ExperienceCard from './components/ExperienceCard';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Element name='/home'> <TitleCard/> </Element>
           <Element name='/about'> <AboutCard/> </Element>
           <Element name='/projects'> <ProjectsCard/> </Element>
+          <Element name='/experience'> <ExperienceCard/> </Element>
           {/*<Route path='/' UnderDevelopment/> */}
         </Route>
         <Route exact path='*'>

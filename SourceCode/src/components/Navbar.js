@@ -15,7 +15,7 @@ const Navbar = ({toggle}) => {
              </a>
              <div className='NavMenuTitles'>
                  {menuData.map((item, index)=>
-                    <Link className='NavMenuLinks' to={item.link} key={index} spy={true} smooth={true} offset={50} duration={500}>
+                    <Link className='NavMenuLinks' to={item.link} key={index} spy={true} smooth={true} offset={0} duration={500}>
                         {item.title}
                     </Link>
                  )}
