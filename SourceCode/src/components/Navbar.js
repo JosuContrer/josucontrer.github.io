@@ -5,13 +5,19 @@ import {Link} from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
 import { menuData } from '../data/MenuData.js';
- 
+
+import nameLogo from '../images/NameInitials2.svg';
+// import nameLogo from '../images/NameInitials6.png';
 
 const Navbar = ({toggle}) => {
      return (
          <div className='NavMenu'>
-             <a className='NavMenuIcon' href='/'>
-                <FontAwesomeIcon icon={faCoffee}/> Josue
+             <a className='NavMenuIconLink' href='/'>
+                 <div className="NavMenuIconContainer">
+                    {/* <FontAwesomeIcon icon={faCoffee}/>  */}
+                    {/* Josue */}
+                    <img className="NameLogo" src={nameLogo}></img>
+                </div>
              </a>
              <div className='NavMenuTitles'>
                  {menuData.map((item, index)=>

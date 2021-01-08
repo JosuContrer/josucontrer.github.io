@@ -32,7 +32,7 @@ function App() {
           <Element name='/about'> <AboutCard/> </Element>
           <Element name='/projects'> <ProjectsCard/> </Element>
           <Element name='/experience'> <ExperienceCard/> </Element>
-          {/*<Route path='/' UnderDevelopment/> */}
+          {/* <Element name='/'> <UnderDevelopment/> </Element> */}
         </Route>
         <Route exact path='*'>
           <ErrorPage/>
