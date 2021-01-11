@@ -3,8 +3,13 @@
   "name": "Enjoy My Personal Website!",
   "icons": [
     {
-      "src": "nameInitials.svg",
-      "sizes": "192x192"
+      "src": "NameInitials.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "NameInitials.svg",
+      "type": "512x512"
     }
   ],
   "start_url": "/",
