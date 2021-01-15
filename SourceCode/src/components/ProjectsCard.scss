@@ -10,4 +10,61 @@
     .ProjectsTextWrapper{
         margin: 5px 0px 5px 0px;
     }
+
+    .ContentCard{
+        background-color: $_dark_slate_lighter;
+        border-radius: 20px;
+        width: 90vw;
+        height: 500px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: grid;
+        column-gap: 3vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 20% 70%;
+        grid-template-areas: 
+            " image header "
+            " image components "
+            " image text ";
+        align-items: center;
+
+        h3{
+            font-size: 40px;
+        }
+
+        .ImageContainer{
+            grid-area: image;
+            padding: 5px;
+            width: 100%;
+            height: 100%;
+            // background-color: orange;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .ComponentsContainer{
+            grid-area: components;
+
+            h4{
+                font-size: 100%;
+            }
+
+            .Icons{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin: 2%;
+                }
+            }
+        }
+
+        .TextContainer{
+            grid-area: text;
+        }
+    }
 }

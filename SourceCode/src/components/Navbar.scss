@@ -3,7 +3,7 @@
 div{ 
     .NavMenu{
         height: 80px;
-        font-size: $_large;
+        font-size: $_large*$_font_scalar;
         // background-image: linear-gradient($_deep_matte_grey, rgba(255,0,0,0));
         // background-color: $_deep_matte_grey;
         color: black;
@@ -59,7 +59,7 @@ div{
         }
 
         button{
-            font-size: $_large;
+            font-size: $_large*$_font_scalar;
             font-weight: bold;
             color: white;
             background-color: $_red;

@@ -20,10 +20,14 @@ $_red: #c00;
 $_red_darker: rgb(172, 0, 0);
 
 // ------- Font size -------
-$_large: 25px;
+$_large: 2vw;
 
 //-------- Screen ---------
-$_min_sceen_width: 1000px; // Use in mobile screen max:width
+$_min_sceen_width: 1000px; // Use in nav menu bar screen max:width
+$_min_mobile_width: 500px;
 
 //-------- Card ----------
 $_card_margin: 5rem 3rem 5rem 2rem;
+
+//------- Font Size Multiplier -------
+$_font_scalar: 1;

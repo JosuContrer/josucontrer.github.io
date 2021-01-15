@@ -45,7 +45,7 @@ export default function AboutCard() {
             </div>
             <div className="ColRight">
                 <h1 className="CardTitle AboutTextWrapper animateAbout">ABOUT</h1>
-                <p className="AboutTextWrapper animateAboutP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p className="AboutTextWrapper animateAboutP">I drink coffee, I eat sushi. I write code and improve my skills every day. I have a B.Sc. degree in Robotics and Electrical & Computer Engineering. I enjoy software engineering so I’m about to finish my master’s in computer science in a bit. Enjoy this React JS portfolio I have developed.</p>
             </div>
         </div>
     )

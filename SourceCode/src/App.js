@@ -34,7 +34,7 @@ function App() {
           <Element name='/experience'> <ExperienceCard/> </Element>
           {/* <Element name='/'> <UnderDevelopment/> </Element> */}
         </Route>
-        <Route exact path='*'>
+        <Route exact path='/*'>
           <ErrorPage/>
         </Route>
       </Switch>

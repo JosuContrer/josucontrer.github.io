@@ -2,13 +2,15 @@ import React from 'react'
 
 import { contactData } from '../data/ContactData';
 
+import './ErrorPage.scss';
+
 export default function ErrorPage() {
     return (
-        <div>
-            <h1>ERROR PAGE OOPS</h1>
-            <div>
+        <div className="ErrorPageContainer">
+            <h1 className="ErrorPageText">ERROR PAGE OOPS</h1>
+            <div className="ContactInfoContainer">
                 {contactData.map((item, index) =>
-                    <a href={item.link}>
+                    <a className="ContactLink" href={item.link}>
                         {item.icon}
                     </a>
                 )}

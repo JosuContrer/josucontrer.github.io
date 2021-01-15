@@ -1,0 +1,35 @@
+@import '../SiteColorPalette.scss';
+
+.ErrorPageContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: $_silver_fox;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4) inset;
+
+    h1{
+        padding: 2rem;
+        margin: 2rem;
+        color: white;
+        background-color: $_red;
+    }
+
+    .ContactInfoContainer{
+        display: flex;
+        flex-direction: row;       
+        font-size: 60px*$_font_scalar;
+
+        .ContactLink{
+            text-decoration: none;
+            color: black;
+            margin: 1rem;
+
+            &:hover{
+                color: orange;
+            }
+        }
+    }
+}

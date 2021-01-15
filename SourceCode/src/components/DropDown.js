@@ -17,12 +17,10 @@ export default function DropDown({toggle, isOpen}) {
             </div>
             <div className="DropDownMenuTitles">
                 {menuData.map((item, index) =>
-                    <div className="DropDownMenuRowContainer">
-                        {item.icon}
-                        <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={0} duration={500}>
-                            {item.title}
-                        </Link>
-                    </div>
+                    <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={0} duration={500}>
+                        {item.icon} &nbsp; {item.title}
+                    </Link>
+                    
                 )}
                 <button href="/contact" title="You wont't regret it!">
                     <FontAwesomeIcon icon={faAddressCard}/> Contact
