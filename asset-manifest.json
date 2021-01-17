@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/josucontrer.github.io/static/css/main.57d0834a.chunk.css",
-    "main.js": "/josucontrer.github.io/static/js/main.e32a1cff.chunk.js",
-    "main.js.map": "/josucontrer.github.io/static/js/main.e32a1cff.chunk.js.map",
-    "runtime-main.js": "/josucontrer.github.io/static/js/runtime-main.04b56725.js",
-    "runtime-main.js.map": "/josucontrer.github.io/static/js/runtime-main.04b56725.js.map",
-    "static/js/2.ba048e2c.chunk.js": "/josucontrer.github.io/static/js/2.ba048e2c.chunk.js",
-    "static/js/2.ba048e2c.chunk.js.map": "/josucontrer.github.io/static/js/2.ba048e2c.chunk.js.map",
-    "static/js/3.bb4c9153.chunk.js": "/josucontrer.github.io/static/js/3.bb4c9153.chunk.js",
-    "static/js/3.bb4c9153.chunk.js.map": "/josucontrer.github.io/static/js/3.bb4c9153.chunk.js.map",
+    "main.css": "/josucontrer.github.io/static/css/main.dd9542ae.chunk.css",
+    "main.js": "/josucontrer.github.io/static/js/main.25b06f1c.chunk.js",
+    "main.js.map": "/josucontrer.github.io/static/js/main.25b06f1c.chunk.js.map",
+    "runtime-main.js": "/josucontrer.github.io/static/js/runtime-main.232865d1.js",
+    "runtime-main.js.map": "/josucontrer.github.io/static/js/runtime-main.232865d1.js.map",
+    "static/js/2.497ca08d.chunk.js": "/josucontrer.github.io/static/js/2.497ca08d.chunk.js",
+    "static/js/2.497ca08d.chunk.js.map": "/josucontrer.github.io/static/js/2.497ca08d.chunk.js.map",
+    "static/js/3.294ddb9a.chunk.js": "/josucontrer.github.io/static/js/3.294ddb9a.chunk.js",
+    "static/js/3.294ddb9a.chunk.js.map": "/josucontrer.github.io/static/js/3.294ddb9a.chunk.js.map",
     "index.html": "/josucontrer.github.io/index.html",
-    "static/css/main.57d0834a.chunk.css.map": "/josucontrer.github.io/static/css/main.57d0834a.chunk.css.map",
-    "static/js/2.ba048e2c.chunk.js.LICENSE.txt": "/josucontrer.github.io/static/js/2.ba048e2c.chunk.js.LICENSE.txt",
+    "static/css/main.dd9542ae.chunk.css.map": "/josucontrer.github.io/static/css/main.dd9542ae.chunk.css.map",
+    "static/js/2.497ca08d.chunk.js.LICENSE.txt": "/josucontrer.github.io/static/js/2.497ca08d.chunk.js.LICENSE.txt",
     "static/media/NameInitials2.c2c6a7de.png": "/josucontrer.github.io/static/media/NameInitials2.c2c6a7de.png",
     "static/media/PMonkeySnippet.8683ec76.png": "/josucontrer.github.io/static/media/PMonkeySnippet.8683ec76.png",
+    "static/media/middle.fd21fa62.jpg": "/josucontrer.github.io/static/media/middle.fd21fa62.jpg",
     "static/media/udp1.f3ec6b46.jpg": "/josucontrer.github.io/static/media/udp1.f3ec6b46.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.04b56725.js",
-    "static/js/2.ba048e2c.chunk.js",
-    "static/css/main.57d0834a.chunk.css",
-    "static/js/main.e32a1cff.chunk.js"
+    "static/js/runtime-main.232865d1.js",
+    "static/js/2.497ca08d.chunk.js",
+    "static/css/main.dd9542ae.chunk.css",
+    "static/js/main.25b06f1c.chunk.js"
   ]
 }
