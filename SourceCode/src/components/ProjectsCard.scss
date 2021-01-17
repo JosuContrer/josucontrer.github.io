@@ -3,8 +3,8 @@
 .ProjectsContainer{
     min-height: 100vh;
     height: fit-content;
-    background-color: $_dark_slate;
-    color: white;
+    background-color: $_60_bright;
+    color: black;
     padding: $_card_margin; 
 
     .ProjectsTextWrapper{
@@ -12,7 +12,7 @@
     }
 
     .ContentCard{
-        background-color: $_dark_slate_lighter;
+        background-color: rgba(0,0,0, $alpha: 0.6);
         border-radius: 20px;
         width: 90vw;
         height: 500px;

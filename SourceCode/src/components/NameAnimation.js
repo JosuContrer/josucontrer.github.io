@@ -50,7 +50,7 @@ export default function NameAnimation() {
                     </h1>
                 </div>
                 <div class="Info2">
-                    <h1 class="Name">I am <br/> <span class="JosueName">Josue</span></h1>
+                    <h1 class="Name">I am <br/>Josue</h1>
                 </div>
             </div>
         </div>

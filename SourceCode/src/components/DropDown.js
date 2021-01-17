@@ -22,9 +22,11 @@ export default function DropDown({toggle, isOpen}) {
                     </Link>
                     
                 )}
-                <button href="/contact" title="You wont't regret it!">
-                    <FontAwesomeIcon icon={faAddressCard}/> Contact
-                </button>
+                <Link className="ContactButton" to="/contact" key="cb" spy={true} smooth={true} offset={0} duration={500}>
+                    <button title="You wont't regret it!">
+                        <FontAwesomeIcon icon={faAddressCard}/> Contact
+                    </button>
+                </Link>
             </div>
             <div className="ContactContainer">
                 {contactData.map((item, index) => 

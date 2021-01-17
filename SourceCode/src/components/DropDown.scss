@@ -8,7 +8,7 @@
     // top: 0;
     width: 350px;
     height: 100vh;
-    background: $_dark_slate;
+    background: #3a2b44;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -17,18 +17,19 @@
     .ExitIconContainer{
         width: 100%;
         text-align: right;
-        background-color: $_dark_slate_lighter;
+        background-color: $_60_dark;
 
         .ExitIcon{
-            color: $_red;
+            color: $_60_bright;
             margin-top: 1.2rem;
             margin-right: 1.5rem;
             margin-bottom: 1rem;
-            font-size: 40px;
+            font-size: 20px;
             cursor: pointer;
+            transition: 200ms ease-in-out;
 
             &:hover{
-                color: $_red_darker;
+                color: $_10_orange;
             }
         }
     }
@@ -38,13 +39,12 @@
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
-        margin-left: 2rem;
+        margin-left: 3rem;
 
         .DropDownMenuLinks{
             display: flex;
-            margin: 10px;
-            font-size: 30px;
-            padding: 1rem;
+            font-size: 21px;
+            padding: 1.2rem;
             border-radius: 6px;
             align-items: center;
             cursor: pointer;
@@ -52,21 +52,18 @@
             color: white;
             width: 100%;
             height: 100%;
-            font-size: 1.5rem;
             
             &:hover{
-                background-color: $_dark_slate_darker;
+                background-color: $_60_dark_light;
             }
-        }        
+        }
 
         button{
             width: fit-content;
             font-size: $_large;
             font-weight: bold;
-            color: white;
-            background-color: $_red;
+            background-color: $_10_yellow;
             padding: 20px;
-            margin-top: 1rem;
             text-decoration: none;
             border: 1px;
             outline-style: none;
@@ -74,7 +71,7 @@
             cursor: pointer;
 
             &:hover{
-                background-color: $_red_darker;
+                background-color: $_10_yellow_bold;
             }
         }
     }
@@ -91,6 +88,10 @@
             text-decoration-color: $_white_darker;
             color: $_white_darker; 
             margin: 10px;
+
+            &:hover{
+                color: $_10_yellow_bold;
+            }
         }
     }
 

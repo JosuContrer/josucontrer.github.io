@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBars } from '@fortawesome/free-solid-svg-icons'
 import { menuData } from '../data/MenuData.js';
 
-import nameLogo from '../images/NameInitials2.svg';
+import nameLogo from '../images/NameInitials2.png';
 // import nameLogo from '../images/NameInitials6.png';
 
 const Navbar = ({toggle}) => {
@@ -26,7 +26,9 @@ const Navbar = ({toggle}) => {
                     </Link>
                  )}
              </div>
-             <button href="/contact" title="You wont't regret it!">Contact</button>
+             <Link className="ContactButton" to="/contact" key="cb" spy={true} smooth={true} offset={0} duration={500}>
+                <button title="You wont't regret it!">Contact</button>
+             </Link>
              <div className="NavMenuMobile" onClick={toggle}>
                  <FontAwesomeIcon icon={faBars}/>
              </div>

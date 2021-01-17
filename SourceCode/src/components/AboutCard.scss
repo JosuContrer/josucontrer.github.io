@@ -3,7 +3,7 @@
 .AboutCardContainer{
     width: 100vw;
     min-height: 100vh;
-    max-height:min-content;
+    max-height: min-content;
     //padding: top right bottom left
     padding: $_card_margin;
     display: flex;
@@ -12,13 +12,41 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: $_silver_fox;
+    background-color: $_60_dark;
 
     .ColLeft{
         width: 50%;
         justify-content: center;
         text-align: center;
         min-width: $_min_sceen_width/2;
+
+        .FunnyImage{
+            position: relative;
+            width: 80%;
+            z-index: 99;
+
+            @media screen and (max-width: $_min_mobile_width){
+                max-width: 50%;
+            }
+        }
+
+        .Circle{
+            position: absolute;
+            top: 28vh;
+            left: 5vw;
+            background-color: $_10_yellow;
+            width: 500px;
+            height: 50%;
+            border-radius: 1000px;
+            z-index: 0;
+
+            @media screen and (max-width: $_min_mobile_width){
+                top: 15vh;
+                left: 15vw;
+                width: 250px;
+                height: 250px;
+            }
+        }
     }
 
     .ColRight{
@@ -26,8 +54,29 @@
         flex-direction: column;
         width: 50%;
 
+        h1{
+            font-size: xx-large;
+        }
+
+        p{
+            font-size: x-large;
+            
+            @media screen and (max-width: $_min_mobile_width){
+                font-size: medium;
+            }
+        }
+
         .AboutTextWrapper{
+            color: white;
             margin: 5px 0px 5px 0px;
         }
+
+        @media screen and (max-width: $_min_mobile_width){
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $_min_mobile_width){
+       padding-top: 5vh;
     }
 }

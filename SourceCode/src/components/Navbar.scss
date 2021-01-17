@@ -33,7 +33,11 @@ div{
                 // background-color: aqua;
                 
                 .NameLogo{
-                    max-height: 60px;
+                    height: 60px;
+
+                    @media screen and (max-width: $_min_mobile_width) {
+                        height: 40px;
+                    }
                 }
             }
         }
@@ -61,8 +65,7 @@ div{
         button{
             font-size: $_large*$_font_scalar;
             font-weight: bold;
-            color: white;
-            background-color: $_red;
+            background-color: $_10_yellow;
             padding: 10px;
             text-decoration: none;
             border: 1px;

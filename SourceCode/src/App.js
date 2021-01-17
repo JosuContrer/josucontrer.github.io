@@ -9,6 +9,9 @@ import AboutCard from './components/AboutCard';
 import DropDown from './components/DropDown';
 import TitleCard from './components/TitleCard';
 import ProjectsCard from './components/ProjectsCard';
+import {Random} from './components/Random';
+import {Hobbies} from './components/Hobbies';
+import {Contact} from './components/Contact';
 import ErrorPage from './components/ErrorPage';
 
 import './App.scss';
@@ -32,6 +35,9 @@ function App() {
           <Element name='/about'> <AboutCard/> </Element>
           <Element name='/projects'> <ProjectsCard/> </Element>
           <Element name='/experience'> <ExperienceCard/> </Element>
+          <Element name='/random'> <Random/> </Element>
+          <Element name='/hobbies'> <Hobbies/> </Element>
+          <Element name='/contact'> <Contact/> </Element>
           {/* <Element name='/'> <UnderDevelopment/> </Element> */}
         </Route>
         <Route exact path='/*'>

@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react'
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { emojify } from 'react-emojione';
+
+import image1 from '../images/Me/funny.png';
+
 import './AboutCard.scss';
 
 export default function AboutCard() {
@@ -41,11 +45,12 @@ export default function AboutCard() {
     return (
         <div className="AboutCardContainer" ref={ref}>
             <div className="ColLeft">
-                <p>WebGL Animation</p>
+                <img className="FunnyImage" src={image1} alt="Ummm this is akward :)"></img>
+                <div className="Circle"></div>
             </div>
             <div className="ColRight">
                 <h1 className="CardTitle AboutTextWrapper animateAbout">ABOUT</h1>
-                <p className="AboutTextWrapper animateAboutP">I drink coffee, I eat sushi. I write code and improve my skills every day. I have a B.Sc. degree in Robotics and Electrical & Computer Engineering. I enjoy software engineering so I’m about to finish my master’s in computer science in a bit. Enjoy this React JS portfolio I have developed.</p>
+                <p className="AboutTextWrapper animateAboutP">I drink coffee, I eat sushi, I write code, and improve my skills every day. I have a B.Sc. degree in Robotics and Electrical & Computer Engineering. I enjoy software engineering so I decided in some months I’m about to finish my master’s in computer science {emojify(':smiley:')}. Enjoy this portfolio I developed in ReactJS showcasing my projects, experience, and me!</p>
             </div>
         </div>
     )

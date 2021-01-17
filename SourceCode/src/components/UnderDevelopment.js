@@ -1,6 +1,6 @@
 import React from 'react'
 
-import image1 from '../images/udp1.jpg';
+import image1 from '../images/Me/udp1.jpg';
 
 import './UnderDevelopment.scss';
 

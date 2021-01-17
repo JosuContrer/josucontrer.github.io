@@ -12,7 +12,7 @@ export const computerScienceData = [
         image: ms,
         description: 
         <p>Infinite Monkey Snippet is a <b>collaborative Web Application</b> that has three kinds of users: creator, viewer, and administrator. Users can create, share, edit metadata, and delete a snippet to collaborate with other is real time. Viewers can view, edit, and comment on lines the code snippet. Administrators can access a complete list of the snippets in the database, delete individual snippets, and delete snippets prior to the date selected.
-            <ul>
+            {/* <ul>
                 <li>Followed <b>Agile methodology</b> to <b>design, develop, test, and deploy</b></li>
                 <li>Developed <b>use cases</b> to identify, clarify, and organize system requirements.</li>
                 <li>Designed <b>REST API</b> using <b>SwaggerHub’s</b> editor to deal between front-end and back-end HTTP requests and responses. </li>
@@ -24,7 +24,7 @@ export const computerScienceData = [
                 </ul>
                 <li><b>Deployed and managed</b> Web Application on AWS cloud computing platform using S3, lambda, and RDS services.</li>
                 <li>Collaborated with team members to <b>fix bugs</b></li>
-            </ul>
+            </ul> */}
         </p>
     },
     {

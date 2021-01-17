@@ -1,12 +1,3 @@
-// Dark Contrast
-// black
-// Are ya yellow?!: #feda6a
-// Silver Fox: #d4d4dc
-// Deep Matte Grey: #393f4d
-// Dark Slate: #1d1e22
-
-// Stlyish and Sophisitcated
-// #5D5C61, #379683, #7395AE, #557A95, #B1A296
 
 $_dark_slate: #393f4d;
 $_dark_slate_lighter: #494f5c;
@@ -19,8 +10,19 @@ $_white_darker: rgb(228, 227, 227);
 $_red: #c00;
 $_red_darker: rgb(172, 0, 0);
 
+// ------- Color -----------
+$_10_orange: #fb3f12;
+$_10_yellow: #fda92b;
+$_10_yellow_bold: #fda92be5;
+$_30_purple: #c7aae8;
+$_60_dark_light: #5b426b;
+$_60_dark: #302338;
+$_60_dark_bold: #3a2b44;
+$_60_green: #d4e2d4;
+$_60_bright: #fff5e0; 
+
 // ------- Font size -------
-$_large: 2vw;
+$_large: 20px;
 
 //-------- Screen ---------
 $_min_sceen_width: 1000px; // Use in nav menu bar screen max:width
