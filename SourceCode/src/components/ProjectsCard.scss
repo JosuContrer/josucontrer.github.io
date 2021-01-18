@@ -1,5 +1,11 @@
 @import '../SiteColorPalette.scss';
 
+$_profile_card_min_width: 500px;
+$_profile_card_max_width: 600px;
+$_profile_card_height: 500px;
+$_profile_card_radius: 10px;
+$_hover_time: 400ms;
+
 .ProjectsContainer{
     min-height: 100vh;
     height: fit-content;
@@ -9,6 +15,98 @@
 
     .ProjectsTextWrapper{
         margin: 5px 0px 5px 0px;
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+
+    h2{
+        color: $_10_orange;
+        text-align: center;
+        font-size: x-large;
+        padding: 20px;
+    }
+
+    .ContentContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .ContentProfile{
+            flex-grow: 1;
+            min-width: $_profile_card_min_width;
+            max-width: $_profile_card_max_width;
+            height: $_profile_card_height;
+            border-radius: $_profile_card_radius;
+            // background-color: aqua;
+            margin: 1rem;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+
+            
+            @media screen and (max-width: $_min_mobile_width){
+                min-width: 100%;
+                max-width: 100%;
+
+                p{
+                    max-width: 250px;
+                }
+            }
+
+            h3{
+                text-align: center;
+                background-color: $_60_dark;
+                color: white;
+                padding: 10px;
+                border-top-left-radius: $_profile_card_radius;
+                border-top-right-radius: $_profile_card_radius;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            p{
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 550px;
+                color: rgba(0,0,0, 0);
+                transition: $_hover_time ease-in-out;
+                z-index: 99;
+            }
+
+            div{
+                position: absolute;
+                height: 92%;
+                width: 100%;
+                // border-radius: $_profile_card_radius;
+                border-bottom-left-radius: $_profile_card_radius;
+                border-bottom-right-radius: $_profile_card_radius;
+                background-color: rgba(0,0,0, 0);
+                transition: $_hover_time ease-in-out;
+                z-index: 0;
+            }
+
+            &:hover{
+               p{
+                   color: white;
+                //    background-color: black;
+               }
+
+               .Grey{
+                   background-color: rgba(0, 0, 0, 0.80);
+               }
+            }
+        }
     }
 
     .ContentCard{
@@ -23,10 +121,14 @@
         column-gap: 3vw;
         grid-template-columns: 50% 50%;
         grid-template-rows: 10% 20% 70%;
+        // grid-template-areas: 
+        //     " image header "
+        //     " image components "
+        //     " image text ";
         grid-template-areas: 
-            " image header "
-            " image components "
-            " image text ";
+            " image image"
+            " header header "
+            " components text ";
         align-items: center;
 
         h3{

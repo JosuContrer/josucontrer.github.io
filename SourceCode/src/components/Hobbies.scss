@@ -1,5 +1,8 @@
+@import '../SiteColorPalette.scss';
+
 .HobbiesPage{
     height: 100vh;
     max-width: fit-content;
     width: 100vw;
+    padding: $_card_margin;
 }
