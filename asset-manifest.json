@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/josucontrer.github.io/static/css/main.77d0b8e7.chunk.css",
-    "main.js": "/josucontrer.github.io/static/js/main.f53b1695.chunk.js",
-    "main.js.map": "/josucontrer.github.io/static/js/main.f53b1695.chunk.js.map",
+    "main.css": "/josucontrer.github.io/static/css/main.e1d3d7c6.chunk.css",
+    "main.js": "/josucontrer.github.io/static/js/main.70fa5c9d.chunk.js",
+    "main.js.map": "/josucontrer.github.io/static/js/main.70fa5c9d.chunk.js.map",
     "runtime-main.js": "/josucontrer.github.io/static/js/runtime-main.30ce940c.js",
     "runtime-main.js.map": "/josucontrer.github.io/static/js/runtime-main.30ce940c.js.map",
     "static/js/2.7a0dc66b.chunk.js": "/josucontrer.github.io/static/js/2.7a0dc66b.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.5d30fc86.chunk.js": "/josucontrer.github.io/static/js/3.5d30fc86.chunk.js",
     "static/js/3.5d30fc86.chunk.js.map": "/josucontrer.github.io/static/js/3.5d30fc86.chunk.js.map",
     "index.html": "/josucontrer.github.io/index.html",
-    "static/css/main.77d0b8e7.chunk.css.map": "/josucontrer.github.io/static/css/main.77d0b8e7.chunk.css.map",
+    "static/css/main.e1d3d7c6.chunk.css.map": "/josucontrer.github.io/static/css/main.e1d3d7c6.chunk.css.map",
     "static/js/2.7a0dc66b.chunk.js.LICENSE.txt": "/josucontrer.github.io/static/js/2.7a0dc66b.chunk.js.LICENSE.txt",
     "static/media/NameInitials2.c2c6a7de.png": "/josucontrer.github.io/static/media/NameInitials2.c2c6a7de.png",
     "static/media/funny.59042802.png": "/josucontrer.github.io/static/media/funny.59042802.png",
@@ -18,6 +18,8 @@
     "static/media/titleImage.3e0c15cb.png": "/josucontrer.github.io/static/media/titleImage.3e0c15cb.png",
     "static/media/titleImage.7df74de7.png": "/josucontrer.github.io/static/media/titleImage.7df74de7.png",
     "static/media/titleImage.c04dd706.png": "/josucontrer.github.io/static/media/titleImage.c04dd706.png",
+    "static/media/titleImage.d60947ea.png": "/josucontrer.github.io/static/media/titleImage.d60947ea.png",
+    "static/media/titleImage.e52435f5.png": "/josucontrer.github.io/static/media/titleImage.e52435f5.png",
     "static/media/titleImage.e8f89ded.png": "/josucontrer.github.io/static/media/titleImage.e8f89ded.png",
     "static/media/titleImage.fc31af94.png": "/josucontrer.github.io/static/media/titleImage.fc31af94.png",
     "static/media/udp1.f3ec6b46.jpg": "/josucontrer.github.io/static/media/udp1.f3ec6b46.jpg"
@@ -25,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.30ce940c.js",
     "static/js/2.7a0dc66b.chunk.js",
-    "static/css/main.77d0b8e7.chunk.css",
-    "static/js/main.f53b1695.chunk.js"
+    "static/css/main.e1d3d7c6.chunk.css",
+    "static/js/main.70fa5c9d.chunk.js"
   ]
 }
