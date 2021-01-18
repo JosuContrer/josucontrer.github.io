@@ -39,6 +39,12 @@
             height: 500px;
             border-radius: 1000px;
             z-index: 0;
+            transition: 700ms ease-in-out;
+
+            @media screen and (max-width: $_min_sceen_width+74px){
+                top: 10vh;
+                left: 23vw;
+            }
 
             @media screen and (max-width: $_min_mobile_width){
                 top: 15vh;
@@ -55,11 +61,13 @@
         width: 50%;
 
         h1{
+            z-index: 99;
             font-size: xx-large;
         }
 
         p{
             font-size: x-large;
+            z-index: 99;
             
             @media screen and (max-width: $_min_mobile_width){
                 font-size: medium;

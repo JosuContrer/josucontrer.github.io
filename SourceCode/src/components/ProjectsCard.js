@@ -45,16 +45,16 @@ function ProjectsCard() {
                     </div>
                 )} */}
             </div>
-            <h2 className="CardSubtitle">Robotics</h2>
+            {/* <h2 className="CardSubtitle">Robotics</h2>
             <div className="ContentContainer">
                 {
                     roboticsData.map((item, index) => 
                         <div className="ContentProfile" key={index}>
-
+                            <h3>{item.title}</h3>
                         </div>
                     )
                 }
-            </div>
+            </div> */}
         </div>
     )
 }
