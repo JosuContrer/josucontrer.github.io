@@ -73,6 +73,10 @@ div{
             border-radius: 10px;
             cursor: pointer;
 
+            &:hover{
+                background-color: $_10_yellow_bold;
+            }
+
             @media screen and (max-width: $_min_sceen_width) {
                 display: none;
             }

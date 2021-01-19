@@ -2,9 +2,43 @@
 
 .RandomPage{
     height: 50vh;
-    max-height: fit-content;
+    min-height: 500px;
     width: 100vw;
     background-color: $_10_yellow;
     color: white;
     padding: $_card_margin;
+
+    .Container{
+        font-size: x-large;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .JokePunchV{
+            color: rgba(0, 153, 255, 1.0);
+        }
+
+        .JokePunchNV{
+            color: rgba(0, 153, 255, 0.0);
+        }
+
+        button{
+            padding: 20px;
+            border-radius: 10px;
+            outline-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            border: 0px;
+            font-weight: bold;
+            background-color: $_60_bright;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(0, 153, 255, 0.87);
+            }
+        }
+    }
 }

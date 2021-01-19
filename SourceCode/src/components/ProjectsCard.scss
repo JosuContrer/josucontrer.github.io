@@ -41,7 +41,7 @@ $_hover_time: 400ms;
             max-width: $_profile_card_max_width;
             height: $_profile_card_height;
             border-radius: $_profile_card_radius;
-            // background-color: aqua;
+            background-color: $_60_dark_bold;
             margin: 1rem;
             position: relative;
             text-align: center;
@@ -67,8 +67,9 @@ $_hover_time: 400ms;
             }
 
             img{
+
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 object-fit: cover;
             }
 
@@ -84,7 +85,7 @@ $_hover_time: 400ms;
                 z-index: 99;
             }
 
-            div{
+            .Grey{
                 position: absolute;
                 height: 92%;
                 width: 100%;

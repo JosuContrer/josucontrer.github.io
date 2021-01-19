@@ -17,7 +17,7 @@ export default function DropDown({toggle, isOpen}) {
             </div>
             <div className="DropDownMenuTitles">
                 {menuData.map((item, index) =>
-                    <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index}spy={true} smooth={true} offset={0} duration={500}>
+                    <Link className="DropDownMenuLinks" onClick={toggle} to={item.link} key={index} spy={true} smooth={true} offset={item.offset} duration={500}>
                         {item.icon} &nbsp; {item.title}
                     </Link>
                     
@@ -30,7 +30,7 @@ export default function DropDown({toggle, isOpen}) {
             </div>
             <div className="ContactContainer">
                 {contactData.map((item, index) => 
-                    <a href={item.link} className="ContactIcon">
+                    <a href={item.link} key={index} className="ContactIcon">
                         {item.icon}
                     </a>
                 )}

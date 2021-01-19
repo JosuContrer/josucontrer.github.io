@@ -11,12 +11,12 @@ export const Contact = () => {
             <div className="ContactContainer">
                 {
                     contactData.map((item, index) =>
-                        <a href={item.link} key={index}>{item.icon}</a>
+                        <a className="Link" href={item.link} key={index}>{item.icon}</a>
                     )
                 }
             </div>
-            <h2>Made with {emojify(':yellow_heart:')} by Josue C.</h2>
-            <a href="jdcontrerasalbuj@wpi.edu">jdcontrerasalbuj@wpi.edu</a>
+            <h2 className="Statement">Made with {emojify(':yellow_heart:')} by Josue C.</h2>
+            <a className="Email" href="jdcontrerasalbuj@wpi.edu">jdcontrerasalbuj@wpi.edu</a>
         </div>
     )
 }

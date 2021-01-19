@@ -1,12 +1,153 @@
 @import '../SiteColorPalette.scss';
 
+// Don't agonize organize
+
 .ExperienceContainer{
     min-height: 100vh;
     height: fit-content;
     color: black;
-    padding: $_card_margin; 
+    padding: $_card_margin;
+    // background-color: rgba($_60_dark, 0.5);
+    background: rgba( 166, 157, 157, 0.15 );
+    box-shadow: inset 0 8px 500px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
     .ExperienceTextWrapper{
         margin: 5px 0px 5px 0px;
+        z-index: 100;
+        color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: $_10_orange;
+
+        &:hover{
+            color: $_10_yellow_bold;
+        }
+    }
+
+    li{
+        margin-bottom: 5px;
+    }
+
+    .Work{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .WorkContainer{
+            flex-grow: 1;
+            max-width: 400px;
+            margin: 2.5vw;
+            color: black;
+            // background-color: aqua;
+
+            .TextContainer{
+                background-color: $_60_bright;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding: 10px;
+                z-index: 99;
+                position: relative;
+
+                h2{
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                ul{
+                    margin-top: 20px;
+                    margin-left: 30px;
+                }
+            }
+
+            .Triangle{
+                width: 100px; 
+                height: 100px; 
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                
+                border-bottom: 100px solid $_60_dark;
+                position: absolute;
+                z-index: 0;
+            }
+        
+            .TL1{
+                @extend .Triangle;
+                transform: translate(-40%, -455%) rotateZ(-45deg);
+            }
+
+            .TR1{
+                @extend .Triangle;
+                transform: translate(140%,-70%) rotateZ(135deg);
+            }
+
+            .TL2{
+                @extend .Triangle;
+                transform: translate(-40%, -500%) rotateZ(-45deg);
+            }
+
+            .TR2{
+                @extend .Triangle;
+                transform: translate(140%,-70%) rotateZ(135deg);
+            }
+        }
+    }
+
+    .LeadershipContainer{
+        width: 80vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        .BlockContainer{
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 20px;
+            z-index: 99;
+
+            .ContentContainer{
+                margin: 10px;
+            }
+
+            ul{
+                margin-top: 10px;
+                padding-left: 25px;
+            }
+        }
+
+        .Circle1{
+            width: 250px;
+            height: 250px;
+            background-color: $_10_yellow;
+            border-radius: 200px;
+            position: absolute;
+            transform: translate(125%, -20%);
+            z-index: 2;
+        }
+
+        .Circle2{
+            width: 250px;
+            height: 250px;
+            background-color: $_60_bright;
+            border-radius: 200px;
+            position: absolute;
+            transform: translate(180%, 50%);
+            z-index: 0;
+        }
     }
 }

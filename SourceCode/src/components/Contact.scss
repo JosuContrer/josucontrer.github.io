@@ -6,4 +6,44 @@
     background-color: $_60_dark;
     color: white;
     padding: $_card_margin;
+    position: relative;
+    text-align: center;
+
+    .ContactContainer{
+        font-size: 80px;
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        left: -1%;
+
+        .Link{
+            text-decoration: none;
+            color: white;
+            margin: 5vw;
+            
+            &:hover{
+                color: $_10_yellow_bold;
+            }
+        }
+    }
+
+    .Statement{
+        position: absolute;
+        bottom: 50%;
+        bottom: 50px;
+        right: 80px;
+    }
+
+    .Email{
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        position: absolute;
+        bottom: 50px;
+        left: 60px;
+
+        &:hover{
+            color: $_10_yellow_bold
+        }
+    }
 }
