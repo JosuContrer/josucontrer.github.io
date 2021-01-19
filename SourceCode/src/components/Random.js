@@ -35,12 +35,16 @@ export const Random = () => {
         <div className="RandomPage">
             <h1>Random</h1>
             <div className="Container">
-                <p>Click on the following to get a random programming joke from the free API…</p>
-                <p className="JokeTypeContainer">Type: {jokeType}</p>
-                <p className="JokeTextContainer">{jokeMain}</p>
-                <p className={visible ? "JokePunchV" : "JokePunchNV"}>{jokePunch}</p>
-                <button onClick={getJoke}>Click Me {emojify(':joy:')}</button>
-                <button onClick={showAnswer}>Answer</button>
+                <p className="Instructions">Click on the following to get a random programming joke from the free API…</p>
+                <div className="TextContainer">
+                    <p className="JokeTypeContainer"><b>Type:</b> {jokeType}</p>
+                    <p className="JokeTextContainer">{jokeMain}</p>
+                    <p className={visible ? "JokePunchV" : "JokePunchNV"}>{jokePunch}</p>
+                </div>
+                <div className="ButtonsContainer">
+                    <button className="b1" onClick={getJoke}>Click Me {emojify(':joy:')}</button>
+                    <button className="b2" onClick={showAnswer}>Answer {emojify(':sunglasses:')}</button>
+                </div>
             </div>
             <a href="https://github.com/15Dkatz/official_joke_api">David Katz Official_Joke_API</a>
         </div>

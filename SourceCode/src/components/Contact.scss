@@ -9,8 +9,12 @@
     position: relative;
     text-align: center;
 
+    @media screen and (max-width: $_min_mobile_width){
+        padding: 10px;
+    }
+
     .ContactContainer{
-        font-size: 80px;
+        font-size: 60px;
         position: absolute;
         width: 100%;
         top: 40%;
@@ -23,6 +27,14 @@
             
             &:hover{
                 color: $_10_yellow_bold;
+            }
+        }
+
+        @media screen and (max-width: $_min_mobile_width){
+            top: 80px;
+
+            .Link{
+                margin: 10px;
             }
         }
     }
@@ -44,6 +56,19 @@
 
         &:hover{
             color: $_10_yellow_bold
+        }
+    }
+
+    @media screen and (max-width: $_min_mobile_width){
+
+        .Statement{
+            font-size: 20px;
+            left: 18px;
+        }
+
+        .Email{
+            bottom: 100px;
+            font-size: 20px;
         }
     }
 }

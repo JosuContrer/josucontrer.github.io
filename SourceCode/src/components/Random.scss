@@ -3,10 +3,29 @@
 .RandomPage{
     height: 50vh;
     min-height: 500px;
+    max-height: fit-content;
     width: 100vw;
     background-color: $_10_yellow;
     color: white;
     padding: $_card_margin;
+    position: relative;
+
+    @media screen and (max-width: $_min_mobile_width){
+        height: 100vh;
+        text-align: center;
+
+        .Instructions{
+            font-size: small;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        right: 40px;
+    }
 
     .Container{
         font-size: x-large;
@@ -14,30 +33,69 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        .JokePunchV{
-            color: rgba(0, 153, 255, 1.0);
+        .TextContainer{
+            min-height: 150px;
+            text-align: center;
+
+            p{
+                color: black;
+            }
+
+            .JokeTypeContainer{
+                margin-bottom: 15px;
+            }
+
+            .JokeTextContainer{
+                font-weight: bold;
+            }
+
+            .JokePunchV{
+                color: rgba(0, 0, 0, 1.0);
+            }
+
+            .JokePunchNV{
+                color: rgba(0, 153, 255, 0.0);
+            }
         }
 
-        .JokePunchNV{
-            color: rgba(0, 153, 255, 0.0);
-        }
+        .ButtonsContainer{
+            .b1{
+                background-color: $_10_orange;
+            }
 
-        button{
-            padding: 20px;
-            border-radius: 10px;
-            outline-style: none;
-            text-decoration: none;
-            font-size: 20px;
-            border: 0px;
-            font-weight: bold;
-            background-color: $_60_bright;
-            cursor: pointer;
+            .b2{
+                background-color: $_60_bright;
+            }
 
-            &:hover{
-                background-color: rgba(0, 153, 255, 0.87);
+            button{
+                margin: 10px;
+                padding: 20px;
+                border-radius: 10px;
+                outline-style: none;
+                text-decoration: none;
+                font-size: 20px;
+                border: 0px;
+                font-weight: bold;
+                background-color: $_60_bright;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: rgba(0, 153, 255, 0.87);
+                }
+            }
+
+            @media screen and (max-width: $_min_mobile_width){
+                button{
+                    margin: 3px;
+                    padding: 15px;
+                }
+
+                .b2{
+                    margin-bottom: 10px;
+                }
             }
         }
     }

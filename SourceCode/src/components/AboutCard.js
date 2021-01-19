@@ -45,8 +45,9 @@ export default function AboutCard() {
     return (
         <div className="AboutCardContainer" ref={ref}>
             <div className="ColLeft">
-                <img className="FunnyImage" src={image1} alt="Ummm this is akward :)"></img>
-                <div className="Circle"></div>
+                <div className="Circle">
+                    <img className="FunnyImage" src={image1} alt="Ummm this is akward :)"></img>
+                </div>
             </div>
             <div className="ColRight">
                 <h1 className="AboutTextWrapper animateAbout">ABOUT</h1>

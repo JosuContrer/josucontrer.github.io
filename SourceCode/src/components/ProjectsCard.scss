@@ -67,10 +67,15 @@ $_hover_time: 400ms;
             }
 
             img{
-
                 width: 100%;
                 // height: 100%;
                 object-fit: cover;
+            }
+
+            @media screen and (max-width: $_min_mobile_width){
+                img{
+                    height: 100%;
+                }
             }
 
             p{
