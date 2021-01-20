@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/josucontrer.github.io/static/css/main.3f3bb03a.chunk.css",
-    "main.js": "/josucontrer.github.io/static/js/main.47434769.chunk.js",
-    "main.js.map": "/josucontrer.github.io/static/js/main.47434769.chunk.js.map",
+    "main.js": "/josucontrer.github.io/static/js/main.aecfe06d.chunk.js",
+    "main.js.map": "/josucontrer.github.io/static/js/main.aecfe06d.chunk.js.map",
     "runtime-main.js": "/josucontrer.github.io/static/js/runtime-main.30ce940c.js",
     "runtime-main.js.map": "/josucontrer.github.io/static/js/runtime-main.30ce940c.js.map",
     "static/js/2.074f3fce.chunk.js": "/josucontrer.github.io/static/js/2.074f3fce.chunk.js",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.30ce940c.js",
     "static/js/2.074f3fce.chunk.js",
     "static/css/main.3f3bb03a.chunk.css",
-    "static/js/main.47434769.chunk.js"
+    "static/js/main.aecfe06d.chunk.js"
   ]
 }
