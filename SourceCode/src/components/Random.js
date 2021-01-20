@@ -35,7 +35,7 @@ export const Random = () => {
         <div className="RandomPage">
             <h1>Random</h1>
             <div className="Container">
-                <p className="Instructions">Click on the following to get a random programming joke from the free API…</p>
+                <p className="Instructions">Click on the following to get a random joke from an awesome free Joke API!</p>
                 <div className="TextContainer">
                     {/* <p className="JokeTypeContainer"><b>Type:</b> {jokeType}</p> */}
                     <p className="JokeTextContainer">{jokeMain}</p>

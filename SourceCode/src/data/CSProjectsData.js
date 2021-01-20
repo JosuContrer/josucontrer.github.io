@@ -16,8 +16,8 @@ export const computerScienceData = [
         ],
         components: [ "AWS", "Java", "MySQL", "React JS", "Swagger REST API", "Agile", "Trello", "GitHub"],
         image: MonkeySnippetImgT,
-        description: 
-            <p>Infinite Monkey Snippet is a <b>collaborative Web Application</b> that has three kinds of users: creator, viewer, and administrator. Users can create, share, edit metadata, and delete a snippet to collaborate with other is real time. Viewers can view, edit, and comment on lines the code snippet. Administrators can access a complete list of the snippets in the database, delete individual snippets, and delete snippets prior to the date selected.</p>,
+        description:
+            <p>Infinite Monkey Snippet is a <b>collaborative Web Application</b> with three kinds of users: creator, viewer, and administrator. Users can create, share, edit metadata, delete a snippet, and collaborate with other is real time. Viewers can view, edit, and comment on lines of the code snippet. Administrators can access a complete list of the snippets in the database, delete individual snippets, and delete snippets prior to the date selected.</p>,
         bulletPoints:
             <p>
                 <ul>
@@ -66,8 +66,8 @@ export const computerScienceData = [
         ],
         components: [ "Python", "GitHub"],
         image: BombermanImgT,
-        description: 
-            <p>The goal of this project was to <b>implement an AI agent</b> using <b>reinforcement learning</b> to play and beat the classic Bomberman game. The agent developed was able to beat each maze variant in the game. The “brain” (Q-table) with the greatest successes was able to blow up walls, monsters, and reached the goal with a decent score.</p>,
+        description:
+            <p>The goal of this project was to <b>implement an AI agent</b> using <b>reinforcement learning</b> to play and beat the classic Bomberman game. The agent developed was able to beat each maze variant in the game. This meant that the “brain” (Q-table) with the greatest successes was able to blow up walls, monsters, and reached the goal with a satisfactory score.</p>,
         bulletPoints:
             <p>
                 <ul>
@@ -88,8 +88,8 @@ export const computerScienceData = [
         ],
         components: [ "Java", "Swing", "EBC Architecture"],
         image: AnnotationApplicationImgT,
-        description: 
-            <p>This <b>desktop application</b> enables a user to load an image (JPG, PNG, or GIF) form disk and annotate it with comments. The <b>annotations are saved</b> within the <b>same directory</b> of the image and loaded if the image is reopened in the annotation application.</p>,
+        description:
+            <p>This <b>desktop application</b> enables a user to <b>annotate and load an image (JPG, PNG, or GIF) form disk.</b> The <b>annotation files are saved</b> within the same directory of the image and are <b>loaded automatically.</b></p>,
         bulletPoints:
             <p>
                 <ul>
@@ -108,8 +108,8 @@ export const computerScienceData = [
         ],
         components: [ "Java", "JavaFx", "Window Sockets", "IntelliJ IDE"],
         image: ChatApplicationImgT,
-        description: 
-            <p>This desktop application allows<b> users to connect and chat</b> between each other by clicking on the <b>list of connected users.</b> This java application follows the<b> single server-multiple client model.</b> The <b>multithreaded server</b> allows multiple users to communicate with each other concurrently. On the client-side users are provided with a GUI to select username, connect with server, and chat with connected users.</p>,
+        description:
+            <p>This Java developed desktop application allows<b> users to connect and chat</b> between each other by clicking on the <b>list of connected users. </b> This application follows the<b> single server-multiple client model.</b> To handle <b>multiple client requests concurrently</b> the server implements <b>threads</b>. Users on the client-side are provided with a GUI that allows them to select username, connect with server, and chat with connected users.</p>,
         bulletPoints:
             <p>
                 <ul>
@@ -147,8 +147,8 @@ export const computerScienceData = [
         ],
         components: [ "Javascript", "WebGL", "HTML", "CSS"],
         image: ComputerGraphicsImgT,
-        description: 
-            <p>Four projects where implemented using the <b>WebGL JavaScript Library.</b> Used the <b>graphics pipeline</b> to manipulate vertices of objects calculated by the computers <b>GPU</b> and displayed on the browser. Other topics covered in the projects where <b>ray tracing vs rasterization</b>, texture, <b>Chaikus algorithm and Bezier Curve,</b> Fractals, lighting algorithms (Phong Interpolation vs Gouraud Shading), reflection and refraction, and back-face culling.</p>,
+        description:
+            <p>Four projects where implemented using the <b>WebGL JavaScript Library.</b> Using the <b>graphics pipeline</b> objects were manipulated and displayed in the Web Browser. Computations were accelerated with the use of the  <b>GPU</b> and preforming methods like face-culling. Additonal topics covered in the projects were <b>ray tracing vs rasterization</b>, texture, Chaikus algorithm and Bezier Curve, Fractals, <b>lighting algorithms (Phong Interpolation vs Gouraud Shading),</b> reflection and refraction.</p>,
         bulletPoints:
             <p>
                 <ul>
