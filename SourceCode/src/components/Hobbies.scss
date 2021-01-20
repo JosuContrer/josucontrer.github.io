@@ -1,8 +1,173 @@
 @import '../SiteColorPalette.scss';
 
 .HobbiesPage{
-    height: 100vh;
-    max-width: fit-content;
+    min-height: 100vh;
+    height: fit-content;
     width: 100vw;
     padding: $_card_margin;
+    padding-bottom: 0;
+    color: white;
+    
+    background: rgba( 166, 157, 157, 0.15 );
+    box-shadow: inset 0 8px 500px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
+
+    @media screen and (max-width: $_min_mobile_width){
+        padding-left: 0;
+        padding-right: 0;
+
+        text-align: center;
+
+        .GridVolunteering{
+            margin: 0;
+            width: 100%;
+        }
+
+        .GridArt{
+            margin: 0;
+        }
+    }
+    .Container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .img1{
+            grid-area: img1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img2{
+            grid-area: img2;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img3{
+            grid-area: img3;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img4{
+            grid-area: img4;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img5{
+            grid-area: img5;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img6{
+            grid-area: img6;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img7{
+            grid-area: img7;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img8{
+            grid-area: img8;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        $_height: 300px;
+        $_collage_margin: 20px;
+
+        .GridVolunteering{
+            display: grid;
+            width: 1000px;
+            // background-color: aqua;
+            min-height: fit-content;
+            margin: $_collage_margin;
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: $_height $_height $_height;
+            grid-template-areas: 
+                "img1 img5 img5"
+                "img2 img6 img7"
+                "img3 img8 img8"
+            ;
+        }
+
+        .img1_a{
+            grid-area: img1_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img2_a{
+            grid-area: img2_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img3_a{
+            grid-area: img3_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img4_a{
+            grid-area: img4_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img5_a{
+            grid-area: img5_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img6_a{
+            grid-area: img6_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img7_a{
+            grid-area: img7_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .img8_a{
+            grid-area: img8_a;
+            object-fit: cover;
+            width: 100%;
+            height: 100%; 
+        }
+
+        $_height_A: 300px;
+
+        .GridArt{
+            display: grid;
+            width: 1000px;
+            height: 1000px;
+            margin: $_collage_margin;
+            // background-color: aquamarine;
+            grid-template-areas: 36% 9% 27% 27%;
+            // grid-template-columns: 400px 100px 300px 300px;
+            grid-template-rows: 30% 30% 30%;
+            grid-template-areas:
+                "img1_a img2_a img2_a img3_a"
+                "img4_a img4_a img5_a img6_a"
+                "img4_a img4_a img7_a img8_a"
+                ;
+            
+        }
+    }
 }

@@ -7,13 +7,14 @@
     height: fit-content;
     color: black;
     padding: $_card_margin;
-    background: rgba( 166, 157, 157, 0.15 );
-    box-shadow: inset 0 8px 500px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6.0px );
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    background: rgba( 166, 157, 157, 0.15 );
+    box-shadow: inset 0 8px 500px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.0px );
 
     .ExperienceTextWrapper{
         margin: 5px 0px 5px 0px;
