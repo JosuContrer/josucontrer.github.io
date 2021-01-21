@@ -11,7 +11,11 @@ $_hover_time: 400ms;
     height: fit-content;
     background-color: $_60_bright;
     color: black;
-    padding: $_card_margin; 
+    padding: $_card_margin;
+
+    //Carousel{
+    //    max-width: 800px;
+    //}
 
     .ProjectsTextWrapper{
         margin: 5px 0px 5px 0px;
@@ -34,6 +38,15 @@ $_hover_time: 400ms;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        .CarouselWrapper{
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .BoxS{
+            box-shadow: 10px 10px 8px #888888;
+        }
 
         .ContentProfile{
             flex-grow: 1;

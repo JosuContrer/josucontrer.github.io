@@ -1,4 +1,50 @@
 @import '../SiteColorPalette.scss';
+.ShadowWrapper{
+    box-shadow: 0 20px 40px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.GridWrapper{
+    //display: flex;
+    //flex-direction: row;
+    //position: relative;
+    //background-color: black;
+    margin: 20px;
+    box-sizing: border-box;
+    display: inline;
+    width: 1000px;
+    height: 1000px;
+    // background-color: aqua;
+    min-height: fit-content;
+
+    .TitleWrapper1{
+        //background-color: black;
+        height: fit-content;
+        min-width: fit-content;
+        transform: rotateZ(-90deg);
+        //position: absolute;
+        position: relative;
+        //top: 0;
+        left: -540px;
+        bottom: -50%;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    .TitleWrapper2{
+        //background-color: black;
+        height: fit-content;
+        min-width: fit-content;
+        transform: rotateZ(-90deg);
+        //position: absolute;
+        position: relative;
+        //top: 0;
+        left: -450px;
+    }
+}
 
 .HobbiesPage{
     min-height: 100vh;
@@ -90,11 +136,12 @@
         .GridVolunteering{
             display: grid;
             width: 1000px;
+            height: 1000px;
             // background-color: aqua;
             min-height: fit-content;
             margin: $_collage_margin;
             grid-template-columns: 50% 25% 25%;
-            grid-template-rows: $_height $_height $_height;
+            grid-template-rows: 34% 33% 33%;
             grid-template-areas: 
                 "img1 img5 img5"
                 "img2 img6 img7"
@@ -161,13 +208,19 @@
             // background-color: aquamarine;
             grid-template-areas: 36% 9% 27% 27%;
             // grid-template-columns: 400px 100px 300px 300px;
-            grid-template-rows: 30% 30% 30%;
+            grid-template-rows: 34% 33% 33%;
             grid-template-areas:
                 "img1_a img2_a img2_a img3_a"
                 "img4_a img4_a img5_a img6_a"
                 "img4_a img4_a img7_a img8_a"
                 ;
             
+        }
+
+        .GridPhotoCine{
+            width: 800px;
+            height: 500px;
+            margin: 40px 40px 60px;
         }
     }
 }
