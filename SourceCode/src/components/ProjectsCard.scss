@@ -1,4 +1,5 @@
 @import '../SiteColorPalette.scss';
+@import './Fonts.scss';
 
 $_profile_card_min_width: 500px;
 $_profile_card_max_width: 600px;
@@ -19,17 +20,16 @@ $_hover_time: 400ms;
 
     .ProjectsTextWrapper{
         margin: 5px 0px 5px 0px;
+        font-family: $_Page_Title;
+        font-size: $_Font_Title_Size;
     }
 
-    h1{
-        font-size: xx-large;
-    }
-
-    h2{
+    .CardSubTitle{
         color: $_10_orange;
         text-align: center;
-        font-size: x-large;
+        font-size: 40px;
         padding: 20px;
+        font-family: 'Racing Sans One', cursive;
     }
 
     .ContentContainer{
@@ -38,6 +38,7 @@ $_hover_time: 400ms;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 10px;
 
         .CarouselWrapper{
             width: 100%;
@@ -91,16 +92,25 @@ $_hover_time: 400ms;
                 }
             }
 
-            p{
+            .Description{
                 position: absolute;
                 text-align: center;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                width: 550px;
+                width: 100%;
                 color: rgba(0,0,0, 0);
                 transition: $_hover_time ease-in-out;
                 z-index: 99;
+                padding: 50px 10px 10px;
+
+                p{
+                    margin-top: 20px;
+
+                    @media screen and (max-width: $_min_mobile_width){
+                        margin-top: 2px;
+                    }
+                }
             }
 
             .Grey{
@@ -116,7 +126,11 @@ $_hover_time: 400ms;
             }
 
             &:hover{
-               p{
+                .Components{
+                    color: #14dbdb;
+                }
+
+               .Des{
                    color: white;
                 //    background-color: black;
                }

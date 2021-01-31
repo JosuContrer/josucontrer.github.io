@@ -51,7 +51,7 @@ export default function AboutCard() {
             </div>
             <div className="ColRight">
                 <h1 className="AboutTextWrapper animateAbout">ABOUT</h1>
-                <p className="AboutTextWrapper animateAboutP">I drink coffee, I eat sushi, I write code, and improve my skills every day. I have a B.Sc. degree in Robotics and Electrical & Computer Engineering. During my undergrad I enjoyed developing and solving problems programmatically so I decided to pursue the Computer Science Masters, I will be finishing in the next couple months {emojify(':smiley:')}. Enjoy this portfolio I developed using ReactJS that showcases my projects, experience, and me!</p>
+                <p className="AboutTextWrapper animateAboutP">I drink coffee, I eat sushi, I write code, and improve my skills every day. I have a B.Sc. degree in Robotics and Electrical & Computer Engineering. During my undergrad I enjoyed developing and solving problems programmatically so I decided to pursue a Masters in Computer Science which I will be finishing in the next couple months {emojify(':smiley:')}. Enjoy this portfolio I developed using ReactJS which showcases my projects, experience, and me!</p>
             </div>
         </div>
     )

@@ -21,7 +21,7 @@ export const Hobbies = () => {
 
     return (
         <div className="HobbiesPage">
-            <h1>Hobbies</h1>
+            <h1>HOBBIES</h1>
             <div className="Container">
                 {/*<div className="GridWrapper">*/}
                 {/*    <div className="TitleWrapper1">*/}

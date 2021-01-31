@@ -4,12 +4,12 @@ import './ExperienceCard.scss';
 function ExperienceCard() {
     return (
         <div className="ExperienceContainer">
-            <h1 className="ExperienceTextWrapper">Experience</h1>
+            <h1 className="ExperienceTextWrapper">EXPERIENCE</h1>
             <div className="Work">
                 <div className="WorkContainer">
                     <div className="TextContainer">
                         <h2>NEST Lab</h2>
-                        <h3><b>Experience:</b> +1.5 years</h3>
+                        <h3><b>Experience:</b> 1.5+ years</h3>
                         <h3><b>Awards:</b> Director’s MQP Award 2020</h3>
                         <h3><b>Video Link:</b> <a href="https://www.youtube.com/watch?v=PBnyCkLuTko&ab_channel=CalebWagner">Click Me</a></h3>
                         <ul>
@@ -25,7 +25,7 @@ function ExperienceCard() {
                 <div className="WorkContainer">
                     <div className="TextContainer">
                         <h2>Smart City Research Center<br/> of Zhejiang Providence</h2>
-                        <h3><b>Experience:</b> +3 months</h3>
+                        <h3><b>Experience:</b> 3+ months</h3>
                         <ul>
                             <li><b>Studied current infrastructure</b> of Hangzhou’s <b>smart parking systems.</b></li>
                             <li>Evaluated potential <b>RFID and 5G solutions</b> to increase smart parking <b>comfort and maintenance.</b></li>

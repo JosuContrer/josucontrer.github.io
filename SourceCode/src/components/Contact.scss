@@ -1,24 +1,32 @@
 @import '../SiteColorPalette.scss';
 
 .ContactPage{
-    height: 50vh;
+    min-height: 50vh;
+    max-height: fit-content;
     width: 100vw;
     background-color: $_60_dark;
     color: white;
-    padding: $_card_margin;
+    padding: 1rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 
     @media screen and (max-width: $_min_mobile_width){
         padding: 10px;
     }
 
+    h1{
+        margin: 1rem;
+    }
+
     .ContactContainer{
         font-size: 60px;
-        position: absolute;
-        width: 100%;
-        top: 40%;
-        left: -1%;
+        // position: absolute;
+        // width: 100%;
+        // top: 10%;
+        // left: -1%;
 
         .Link{
             text-decoration: none;
@@ -39,23 +47,43 @@
         }
     }
 
-    .Statement{
-        position: absolute;
-        bottom: 50%;
-        bottom: 50px;
-        right: 80px;
+    .LI{
+        margin: 1rem;
     }
 
-    .Email{
-        text-decoration: none;
-        color: white;
-        font-size: x-large;
-        position: absolute;
-        bottom: 50px;
-        left: 60px;
+    .LI-badge-container.horizontal.dark .LI-logo {
+        position: unset;
+        margin-left: 20px;
+    }
 
-        &:hover{
-            color: $_10_yellow_bold
+    .Bottom{
+        min-height: fit-content;
+        width: 100%;
+        // background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        // position: relative;
+        .Statement{
+            // position: absolute;
+            // bottom: 50%;
+            // bottom: 50px;
+            // right: 80px;
+        }
+
+        .Email{
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            // position: absolute;
+            // bottom: 50px;
+            // left: 60px;
+
+            &:hover{
+                color: $_10_yellow_bold
+            }
         }
     }
 

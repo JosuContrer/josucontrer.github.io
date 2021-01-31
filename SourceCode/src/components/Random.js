@@ -33,7 +33,7 @@ export const Random = () => {
 
     return (
         <div className="RandomPage">
-            <h1>Random</h1>
+            <h1>RANDOM</h1>
             <div className="Container">
                 <p className="Instructions">Click on the following to get a random joke from an awesome free Joke API!</p>
                 <div className="TextContainer">
@@ -45,8 +45,8 @@ export const Random = () => {
                     <button className="b1" onClick={getJoke}>Click Me {emojify(':joy:')}</button>
                     <button className="b2" onClick={showAnswer}>Answer {emojify(':sunglasses:')}</button>
                 </div>
+                <a href="https://github.com/15Dkatz/official_joke_api">David Katz Official_Joke_API</a>
             </div>
-            <a href="https://github.com/15Dkatz/official_joke_api">David Katz Official_Joke_API</a>
         </div>
     )
 }

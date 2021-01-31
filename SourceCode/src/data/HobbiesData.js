@@ -15,6 +15,7 @@ import img5_a from '../images/Art/img5.png';
 import img6_a from '../images/Art/img6.png';
 import img7_a from '../images/Art/img7.png';
 import img8_a from '../images/Art/img8.png';
+import img9_a from '../images/Art/img9.png';
 
 export const volunteeringImages = [
     {title: "img1", image: img1},
@@ -36,4 +37,5 @@ export const artImages = [
     {title: "img6_a", image: img6_a},
     {title: "img7_a", image: img7_a},
     {title: "img8_a", image: img8_a},
+    {title: "img9_a", image: img9_a},
 ]

@@ -89,7 +89,7 @@ export const computerScienceData = [
         components: [ "Java", "Swing", "EBC Architecture"],
         image: AnnotationApplicationImgT,
         description:
-            <p>This <b>desktop application</b> enables a user to <b>annotate and load an image (JPG, PNG, or GIF) form disk.</b> The <b>annotation files are saved</b> within the same directory of the image and are <b>loaded automatically.</b></p>,
+            <p>This <b>desktop application</b> enables a user to <b>annotate and load an image (JPG, PNG, or GIF) from disk.</b> The <b>annotation files are saved</b> within the same directory of the image and are <b>loaded automatically.</b></p>,
         bulletPoints:
             <p>
                 <ul>
@@ -148,12 +148,12 @@ export const computerScienceData = [
         components: [ "Javascript", "WebGL", "HTML", "CSS"],
         image: ComputerGraphicsImgT,
         description:
-            <p>Four projects where implemented using the <b>WebGL JavaScript Library.</b> Using the <b>graphics pipeline</b> objects were manipulated and displayed in the Web Browser. Computations were accelerated with the use of the  <b>GPU</b> and preforming methods like face-culling. Additonal topics covered in the projects were <b>ray tracing vs rasterization</b>, texture, Chaikus algorithm and Bezier Curve, Fractals, <b>lighting algorithms (Phong Interpolation vs Gouraud Shading),</b> reflection and refraction.</p>,
+            <p>Four projects where implemented using the <b>WebGL JavaScript Library.</b> This library allows the execution of programs on the <b>computer's GPU</b> while rendering objects in browser window. Using the <b>graphics pipeline</b> objects were manipulated, animated, and displayed. Graphics were accelerated with the use of methods like face-culling. Additional topics covered in the projects were <b>ray tracing vs rasterization</b>, texture, Chaikus algorithm and Bezier Curve, Fractals, <b>lighting algorithms (Phong Interpolation vs Gouraud Shading),</b> reflection and refraction.</p>,
         bulletPoints:
             <p>
                 <ul>
                     <li>1) <b>Web Paint</b> – Web browser canvas that can load .bat files and draw vectors.</li>
-                    <li>2) <b>Mesh Viewer</b> – 3D program that loads a mesh object form a .ply file and animates by rotation, translation, and pulsation transformations.</li>
+                    <li>2) <b>Mesh Viewer</b> – 3D program that loads a mesh object from a .ply file and animates by rotation, translation, and pulsation transformations.</li>
                     <li>3) <b>Kinematic Sculpture</b> – Sculpture that uses hierarchical modeling to assign parent child relationships that allows group transformations.</li>
                     <li>4) <b>Ray Tracer</b> – Three different scenes rendered using a set amount of ray tracing iterations for more accurate depiction of 3D scenes.</li>
                 </ul>
