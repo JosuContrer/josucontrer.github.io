@@ -57,6 +57,12 @@
             z-index: 99;
             font-size: $_Font_Title_Size;
             font-family: $_Page_Title;
+            color: #000;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px rgb(153, 149, 149),
+                0 0 20px rgb(54, 53, 53),
+                0 0 40px $_10_yellow_bold;
         }
 
         p{

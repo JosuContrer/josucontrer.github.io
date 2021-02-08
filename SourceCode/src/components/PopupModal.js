@@ -1,48 +1,57 @@
 import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
+import {Carousel} from "react-responsive-carousel";
 
 // import 'reactjs-popup/dist/index.css';
 import './PopupModal.scss';
 
-export const PopupModal = () => {
+export const PopupModal = (props) => {
 
     return(
     <Popup
-        trigger={<button className="button"> Open Modal </button>}
+        trigger={<button className="buttModal">Click me for more ... </button>}
         modal
         nested
     >
+      
         {close => (
-            <div className="modal">
-                <button className="close" onClick={close}>
-                    &times;
-                </button>
-                <div className="header"> Modal Title </div>
-                <div className="content">
-                    {' '}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                    Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                    delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-                    <br />
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-                    commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-                    explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+                <div className="modal">
+                    <button className="close" onClick={close}>
+                        &times;
+                    </button>
+                    <div className="imagesContainer">
+                        <Carousel showArrows={true}>
+                            {props.content.map((item, index) =>
+                                <div>
+                                    {item.type === 'img' ? 
+                                        <img src={item.object}/> :
+                                        <video width="100%" controls>
+                                            <source src={item.object} type="video/mp4"></source>    
+                                        </video>}
+                                </div>
+                            )}
+                        </Carousel>
+                    </div>
+                    <div className="header"> {props.title} </div>
+                    <div className="content">
+                        {' '}
+                        {props.bulletPoints}
+                    </div>
+                    <h4>Documentation</h4>
+                    <div className="documentationContainer">
+                        {props.documentation.map((item, index) => 
+                            <div className="dboxes">
+                            {item.available === "Yes" ?
+                                <a href={item.link}>
+                                    {item.icon}
+                                </a>
+                             : <></>
+                            }
+                            </div>
+                        )}
+                    </div>
                 </div>
-                <div className="actions">
-                    <Popup
-                        trigger={<button className="button"> Trigger </button>}
-                        position="top center"
-                        nested
-                    >
-            <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              magni omnis delectus nemo, maxime molestiae dolorem numquam
-              mollitia, voluptate ea, accusamus excepturi deleniti ratione
-              sapiente! Laudantium, aperiam doloribus. Odit, aut.
-            </span>
-                    </Popup>
-                </div>
-            </div>
         )}
+       
     </Popup>)
 };

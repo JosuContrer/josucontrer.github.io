@@ -11,12 +11,15 @@ $_hover_time: 400ms;
     min-height: 100vh;
     height: fit-content;
     background-color: $_60_bright;
+    // background-color: black;
     color: black;
     padding: $_card_margin;
+    box-shadow: inset 0 0 20px -10px black;
 
-    //Carousel{
-    //    max-width: 800px;
-    //}
+    b{
+        color: $_orange_bold;
+        opacity: 0;
+    }
 
     .ProjectsTextWrapper{
         margin: 5px 0px 5px 0px;
@@ -25,11 +28,14 @@ $_hover_time: 400ms;
     }
 
     .CardSubTitle{
+        --neon-text-color: #f40;
+        
         color: $_10_orange;
         text-align: center;
         font-size: 40px;
         padding: 20px;
         font-family: 'Racing Sans One', cursive;
+        text-shadow: 1px 1px 1px black;
     }
 
     .ContentContainer{
@@ -60,14 +66,16 @@ $_hover_time: 400ms;
             position: relative;
             text-align: center;
             overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(73, 75, 97, 0.37);
 
             
             @media screen and (max-width: $_min_mobile_width){
-                min-width: 100%;
-                max-width: 100%;
+                margin-left: 2rem;
+                min-width: 90vw;
+                max-width: 90vw;
 
                 p{
-                    max-width: 250px;
+                    width: 100%;
                 }
             }
 
@@ -128,6 +136,7 @@ $_hover_time: 400ms;
             &:hover{
                 .Components{
                     color: #14dbdb;
+                    font-weight: bolder;
                 }
 
                .Des{
@@ -137,6 +146,10 @@ $_hover_time: 400ms;
 
                .Grey{
                    background-color: rgba(0, 0, 0, 0.80);
+               }
+
+               b{
+                   opacity: 100;
                }
             }
         }

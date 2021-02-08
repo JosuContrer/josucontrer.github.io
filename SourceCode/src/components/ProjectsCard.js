@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {Carousel} from "react-responsive-carousel";
 import {computerScienceData} from '../data/CSProjectsData.js';
@@ -10,6 +10,8 @@ import './ProjectsCard.scss';
 
 function ProjectsCard() {
 
+    const [isShown, setIsShown] = useState(false);
+
     const listItem = (length, index) => {
         if(index !== length){
            return ", ";
@@ -19,34 +21,10 @@ function ProjectsCard() {
         <div className="ProjectsContainer">
             <h1 className="CardTitle ProjectsTextWrapper">PROJECTS</h1>
             <h2 className="CardSubTitle">COMPUTER SCIENCE</h2>
-            {/*omputer Science</h2>*/}
-            {/*<div className="ContentContainer">*/}
-            {/*    <div className="CarouselWrapper">*/}
-            {/*        <Carousel showArrows={true} >*/}
-            {/*            {*/}
-            {/*                computerScienceData.map((item, index) =>*/}
-            {/*                    <div key={index}>*/}
-            {/*                        <img src={item.image}/>*/}
-            {/*                        <div className="legend">*/}
-            {/*                            <h1>{item.title}</h1>*/}
-            {/*                            <p>{*/}
-            {/*                                item.components.map((item2, index) => {*/}
-            {/*                                    if (item.components.length !== (index+1))*/}
-            {/*                                        return item2 + ', '*/}
-            {/*                                    return item2*/}
-            {/*                                })*/}
-            {/*                            }</p>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                )*/}
-            {/*            }*/}
-            {/*        </Carousel>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
             <div className="ContentContainer">
                 {
                     computerScienceData.map((item, index) =>
-                        <div className="ContentProfile" key={index}>
+                        <div className="ContentProfile" key={index} onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
                             <h3>{item.title}</h3>
                             <div className="Description">
                                 <p className="Components">{
@@ -58,7 +36,7 @@ function ProjectsCard() {
                                     )
                                 }</p>
                                 <p className="Des">{item.description}</p>
-                                <PopupModal></PopupModal>
+                                <PopupModal index={index} visible={isShown} content={item.content} title={item.title} bulletPoints={item.bulletPoints} documentation={item.documentation}></PopupModal>
                             </div>
                             <div className="Grey"></div>
                             <img src={item.image}></img>
@@ -66,17 +44,6 @@ function ProjectsCard() {
                     )
                 }
             </div>
-            {/* <h2 className="CardSubtitle">Robotics</h2>
-            <div className="ContentContainer">
-                {
-                    roboticsData.map((item, index) => 
-                        <div className="ContentProfile" key={index}>
-                            <h3>{item.title}</h3>
-                        </div>
-                    )
-                }
-            </div> */}
-            {/* <PopupModal></PopupModal> */}
         </div>
     )
 }

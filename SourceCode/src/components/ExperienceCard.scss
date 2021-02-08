@@ -2,7 +2,6 @@
 @import './Fonts.scss';
 
 // Don't agonize organize
-
 .ExperienceContainer{
     min-height: 100vh;
     height: fit-content;
@@ -61,6 +60,10 @@
                 padding: 10px;
                 z-index: 99;
                 position: relative;
+
+                b{
+                    color: black;
+                }
 
                 h2{
                     text-align: center;
@@ -144,6 +147,10 @@
         display: flex;
         flex-direction: column;
         position: relative;
+
+        b{
+            color: black;
+        }
         
         .BlockContainer{
             background: rgba( 255, 255, 255, 0.25 );
