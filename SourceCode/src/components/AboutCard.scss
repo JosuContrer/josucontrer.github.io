@@ -66,8 +66,12 @@
         }
 
         p{
-            font-size: x-large;
+            font-size: large;
             z-index: 99;
+            text-align: justify;
+            max-width: 650px;
+            position: relative;
+            left: 1rem;
             
             @media screen and (max-width: $_min_mobile_width){
                 font-size: medium;

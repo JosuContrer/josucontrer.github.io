@@ -1,6 +1,9 @@
 @import '../SiteColorPalette.scss';
 @import './Fonts.scss';
 
+$_width_pic_grid: 700px;
+$_height_pic_grid: 1500px;
+
 .ShadowWrapper{
     box-shadow: 0 20px 40px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -8,26 +11,18 @@
 }
 
 .GridWrapper{
-    //display: flex;
-    //flex-direction: row;
-    //position: relative;
-    //background-color: black;
     margin: 20px;
     box-sizing: border-box;
     display: inline;
     width: 1000px;
     height: 1000px;
-    // background-color: aqua;
     min-height: fit-content;
 
     .TitleWrapper1{
-        //background-color: black;
         height: fit-content;
         min-width: fit-content;
         transform: rotateZ(-90deg);
-        //position: absolute;
         position: relative;
-        //top: 0;
         left: -540px;
         bottom: -50%;
 
@@ -39,13 +34,10 @@
     }
 
     .TitleWrapper2{
-        //background-color: black;
         height: fit-content;
         min-width: fit-content;
         transform: rotateZ(-90deg);
-        //position: absolute;
         position: relative;
-        //top: 0;
         left: -450px;
     }
 }
@@ -138,23 +130,25 @@
             width: 100%;
             height: 100%;
         }
-        
+
         $_height: 300px;
         $_collage_margin: 20px;
 
         .GridVolunteering{
             display: grid;
-            width: 1000px;
-            height: 1000px;
+            width: $_width_pic_grid;
+            height: $_height_pic_grid;
             // background-color: aqua;
             min-height: fit-content;
             margin: $_collage_margin;
             grid-template-columns: 50% 25% 25%;
-            grid-template-rows: 34% 33% 33%;
+            grid-template-rows: repeat(5, 20%);
             grid-template-areas: 
-                "img1 img5 img5"
+                "img1 img1 img1"
+                "img5 img5 img5"
                 "img2 img6 img7"
-                "img3 img8 img8"
+                "img3 img3 img3"
+                "img8 img8 img8"
             ;
         }
 
@@ -217,18 +211,19 @@
 
         .GridArt{
             display: grid;
-            width: 1000px;
-            // height: 1000px;
+            width: $_width_pic_grid;
+            height: $_height_pic_grid;
             margin: $_collage_margin;
             // background-color: aquamarine;
             grid-template-areas: 36% 7% 27% 27%;
             // grid-template-columns: 400px 100px 300px 300px;
-            grid-template-rows: 25% 25% 25% 25%;
+            grid-template-rows: repeat(5, 20%);
             grid-template-areas:
-                "img1_a img2_a img2_a img3_a"
+                "img1_a img1_a img2_a img2_a"
                 "img4_a img4_a img5_a img6_a"
                 "img4_a img4_a img7_a img8_a"
                 "img9_a img9_a img9_a img9_a"
+                "img3_a img3_a img3_a img3_a"
                 ;
             
         }
@@ -238,6 +233,44 @@
             width: 800px;
             height: 500px;
             margin: 40px 40px 60px;
+        }
+    
+        @media screen and (max-width: $_min_mobile_width) {   
+
+            .GridVolunteering{
+                display: grid;
+                width: 1000px;
+                height: 1000px;
+                // background-color: aqua;
+                min-height: fit-content;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: repeat(7, auto);
+                grid-template-areas: 
+                    "img1 img1"
+                    "img2 img2"
+                    "img3 img3"
+                    "img6 img7"
+                    "img4 img4"
+                    "img5 img5"
+                    "img8 img8"
+                ;
+                margin-bottom: 16rem;
+            }
+
+            .GridArt{
+                display: grid;
+                width: 1000px;
+                grid-template-areas: 36% 7% 27% 27%;
+                grid-template-rows: repeat(6, auto);
+                grid-template-areas:
+                    "img1_a img1_a img1_a img1_a"
+                    "img2_a img2_a img2_a img2_a"
+                    "img3_a img3_a img3_a img3_a"
+                    "img4_a img4_a img5_a img6_a"
+                    "img4_a img4_a img7_a img8_a"
+                    "img9_a img9_a img9_a img9_a"
+                    ;
+            }
         }
     }
 }
